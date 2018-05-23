@@ -1,0 +1,701 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #fff
+	opacity: 1
+
+*:-moz-placeholder
+	color: #fff
+	opacity: 1
+
+*::-moz-placeholder
+	color: #fff
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #fff
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 18px
+	min-width: 320px
+	position: relative
+	line-height: 1
+	font-family: $default-font
+	overflow-x: hidden
+
+#top
+	width: 64px
+	position: fixed
+	height: 64px
+	right: 5%
+	bottom: 50px
+	display: none
+	z-index: 999
+	transition: all .15s
+
+#main 
+	position: relative
+
+.absolute
+	bottom: 0 !important
+
+.bold
+	font-weight: bold !important
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+::selection
+	background-color: $accent
+	color: #fff
+p 
+	margin: 0
+h1
+	font-size: 48px
+	text-transform: uppercase
+	margin-bottom: 15.3px
+	margin-top: 0
+
+h2
+	font-size: 28px
+	margin: 0
+h3
+	margin: 0
+	font-size: 28px
+.clear
+	clear: both
+.button
+	display: inline-block
+	height: 90.7px
+	width: 248.9px
+	line-height: 84.7px
+	text-align: center 
+	transition: all .4s
+	text-transform: uppercase
+	text-decoration: none
+a.green
+	color: #fff
+	text-decoration: none
+	&:hover
+		text-decoration: none
+		color: #fff
+.green
+	background-color: #AEC961
+	border: 2px solid #AEC961
+	border-bottom: 6.9px solid #89A53C
+	color: #fff
+.white
+	background-color: #fff 
+	color: #89A53C
+	border: 2px solid #89A53C
+	border-bottom: 6.9px solid #89A53C
+.button:hover
+	background-color: #89A53C
+	border-color: #89A53C
+	color: #fff
+	text-decoration: none
+.green_bg
+	background-image: url(../img/greenBG.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	position: relative
+	padding: 20px 
+	.green_inner
+		border: 2px solid #89A53C
+header
+	position: relative
+	width: 100%
+	min-height: 100vh
+	background-size: cover
+	overflow: hidden
+	.parallax
+		background-image: url(../img/header.jpg)
+		background-size: cover
+		width: 100%
+		text-outline: -300px
+		position: absolute
+		height: 100%
+		z-index: -1
+	.header-info
+		display: inline-block
+		min-height: 100vh
+		max-width: 615px
+		background-color: #fff
+		padding: 102.8px 48.3px 0 62.3px
+		h2
+			margin-top: 0
+			color: #999999
+			margin-bottom: 60px
+		p
+			margin-top: 0
+			padding-top: 0
+			margin-bottom: 27px
+	.head_phone
+		padding: 26px 48px 0 28px
+		background-color: #fff
+		position: absolute
+		top: 0
+		right: 60px
+		text-align: center
+		a 
+			display: block
+			color: #000
+			font-size: 24px
+		a.popup 
+			color: #89A53C
+			margin: 20px 20px
+			padding-bottom: 2px
+			border-bottom: 1px dashed
+			display: inline-block
+			&:hover
+				text-decoration: none 
+
+#solutions
+	.heading
+		text-align: center
+		width: 678px
+		margin: 14.8px auto 10.5px
+		padding-top: 93.7px
+		position: relative
+		h2
+			margin-top: 0
+			margin-bottom: 10.5px
+		p
+			color: #999999
+			margin: 0 0 10.5
+	.items_wrap
+		width: 100%
+		position: relative
+		height: 719.6px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		align-items: flex-start
+		flex-wrap: wrap
+		overflow: hidden
+		.parallax
+			position: absolute
+			top: -300px
+			left: 0
+			width: 100%
+			height: 100%
+			background-image: url(../img/solutionsbg.jpg)
+			background-size: cover
+			z-index: -1
+	.item
+		max-width: 450px
+		padding: 9px 53.3px 40.6px 44.1px
+		background-color: #fff
+		margin: 0 12px
+		min-height: 321.4px
+		li
+			color: #999999
+		&.bot
+			width: 50%
+			padding: 45px 41px 45px 44px
+			margin-left: 80px
+			margin-top: -200px
+			h3
+				margin: 0
+				margin-bottom: 18.6px
+			p
+      	color: #999999
+
+#advantages
+	h2
+		text-transform: uppercase
+		margin-bottom: 52px
+		text-align: center
+	.items_wrap
+		width: 100%
+		.middle
+			.item
+				margin: 0 auto 45px
+		.item
+			width: 311px
+			margin-bottom: 45px
+			img
+				width: 37.7px
+				float: left
+			p
+				float: left
+				width: 230px
+				padding-left: 10px
+				margin: 0
+			&.greenhouse
+				width: 100%
+				img
+					width: 100%
+					float: none
+	.carcass
+		h3
+			margin-top: 50px
+		img
+			margin: 20px
+			display: inline-block
+			width: 317px
+
+#polycorb
+	h2
+		text-align: center
+		margin-top: 77.9px
+		margin-bottom: 44.1px
+	h3
+		text-transform: uppercase
+		color: #89A53C
+		margin-top: 30px
+	p
+		margin-top: 19.7px
+		color: #999999
+#counters
+	.heading
+		background-color: #fff
+		text-align: center
+		width: 474px
+		padding: 16.6px
+		margin: 108px auto -58px
+		z-index: 1
+		position: relative
+		h2
+			font-size: 48px
+			text-transform: uppercase
+		p
+			margin-top: 0
+			margin-bottom: 8px
+	.green_bg
+		padding: 23px
+		position: relative
+		.count_wrap
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-around
+			align-content: center
+			padding: 85.6px
+			padding-bottom: 0
+			border: 2px solid #89A53C
+			text-align: center
+			.count
+				color: #fff
+				.number
+					font-size: 86.1px
+					font-weight: bold
+					span
+						font-size: 20px
+				.label
+					font-size: 20px
+			.we_now
+				height: 85.6px
+				align-self: flex-end
+				line-height: 85.5px
+				width: 100%
+
+#process
+	margin-top: 120.2px
+	h2
+		text-align: center
+		text-transform: uppercase
+		margin-bottom: 41.9px
+	img.big_img
+		max-width: 1091px
+		margin: 0 auto
+		width: 100%
+
+#greenhouses
+	font-weight: bold
+	margin-top: 200.4px
+	.row
+		margin-bottom: 175.3px
+		position: relative
+	h2
+		color: #89A53C
+		font-size: 30px
+		text-transform: uppercase
+	p
+		margin-top: 12.3px
+	.list_sec
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+		border-bottom: 2px solid #999999
+		ul
+			padding-left: 17px
+			margin-top: 28.1px
+			font-size: 16px
+			margin-bottom: 0
+			li
+				padding-bottom: 15.9px
+	.text
+		ul
+			padding-left: 20px
+			margin-top: 10px
+		p, li
+			font-weight: normal
+			color: #999999
+		p
+			margin: 30px 0
+			a 
+				color: #AEC961
+				transition: all .2s
+				text-decoration: underline
+				&:hover
+					color: #89A53C
+			strong 
+				color: #000
+		p.bold
+			margin: 0
+		.button
+			margin-right: 47.2px
+			margin-bottom: 30px
+		.white
+			width: 220px
+		h3 
+			text-transform: uppercase
+			font-size: 20px
+	.img_wrap
+		position: relative
+		text-align: center
+	.more_photo
+		position: relative
+		z-index: 1
+		display: block
+		text-transform: uppercase
+		color: #fff
+		border: 2px solid
+		width: 170.7px
+		height: 90.7px
+		line-height: 90.7px
+		text-align: center
+		margin: -136.3px auto 0
+		transition: all .4s
+		&:hover
+			background-color: #fff
+			color: #89A53C
+			text-decoration: none
+	.green_bg
+		margin-top: 82px
+		.green_inner
+			padding: 0 42.5px 28.7px
+		p 
+			color: #fff
+			font-size: 24px
+			margin: 28.7px 0 10px
+			line-height: 32px
+		a 
+			color: #000
+			font-weight: normal
+			text-decoration: underline
+
+#addit
+	.item	
+		margin-bottom: 78.4px	
+	.images
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+	.img_wrap
+		width: 50%
+	.text
+		padding: 0 20px
+	h2
+		text-align: center
+		margin-bottom: 47.9px
+	p
+		font-size: 28px
+		font-weight: bold
+		margin-bottom: 75px
+		margin-top: 28.2px
+
+#delivery
+	.row
+		position: relative
+	table
+		width: 437px
+	.heading
+		text-align: center
+		margin-bottom: 27.3px
+		p
+			font-size: 16px
+	h2
+		margin-top: 70px
+		margin-bottom: 27.3px
+	.info_text
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+	.text
+		padding: 0 32.6px
+		line-height: 21px
+		p 
+			margin-bottom: 21px
+
+#save
+	margin-top: 79px
+	text-align: center
+	margin-bottom: 107px
+	.heading
+		text-align: center
+		margin-bottom: 32.6px
+		h2
+			text-transform: uppercase
+			margin-bottom: 18.6px
+		p
+			color: #999999
+	.text
+		font-weight: bold
+		line-height: 21px
+		font-size: 20px
+
+#forma
+	margin-bottom: 177px
+	.green_inner
+		padding: 36.4px 0
+
+table
+	font-size: 16px
+	&.price
+		margin: 0 auto
+		td, th
+			text-align: center
+			padding: 25px
+
+	.grey
+		background-color: #f2f2f2
+	th
+		padding: 25px 0
+		background-color: #f2f2f2
+		text-align: center
+		span
+			font-weight: normal
+	td
+		text-align: center
+		padding: 11.3px 0
+
+
+.form_wrap
+	text-align: center
+	h2
+		font-size: 48px
+		margin-bottom: 34.4px
+	.green_inner
+		padding: 36.4px 0
+	input, .button
+		margin: 0 15px
+	input
+		color: #fff
+		display: inline-block
+		padding: 32.6px 0
+		padding-left: 18px
+		border: 2px solid #ffffff
+		background: inherit
+		transition: all .4s
+		&:focus
+			background-color: #fff
+			outline-color: #89A53C
+
+footer
+	padding: 48.8px 0 43.6px
+	border-top: 2px solid #E5E5E5
+	.first
+		font-weight: bold
+	.second
+		text-align: center
+		font-size: 14px
+		line-height: 21px
+	.third
+		text-align: right
+		p 
+			margin-bottom: 12px
+		a 
+			font-weight: bold
+			font-size: 24px
+			color: #000
+
+	.copy
+		margin: 15.6px 0
+		span
+			color: #999999
+		a 
+			color: #000
+			font-weight: bold
+		img
+			width: 20px
+			height: auto
+
+.popup_content
+	margin: 0 10%
+
+	&.overlay
+		background-color: #fff
+		padding: 64.4px 5%
+	h2
+		color: #89A53C
+		text-transform: uppercase
+		font-size: 30px	
+		text-align: center
+		padding-bottom: 45.9px
+.wrap
+	overflow-x: scroll
+	.table_wrap
+		display: inline-block
+.decor
+	position: absolute
+
+#redis
+	position: absolute
+	top: -156px
+	left: 0
+
+#baclajan
+	width: 165px
+	right: 73.1px
+	position: absolute
+	bottom: -46.9px
+
+#goroshek, #kabachok
+	width: 250px
+	left: 40%
+	top: -68px
+#ukrop
+	width: 200px
+	right: 31%
+	z-index: -1
+	top: -28px
+#ogurec
+	width: 200px
+	right: 24px
+	bottom: 128px
+	z-index: -1
+#redis2
+	width: 244px
+	left: 74%
+	top: -160px
+	transform: scale(-1, 1)
+#perec
+	left: 61px
+	bottom: -80px
+#repa
+	width: 244px
+	right: 30px
+	bottom: 1px
+	z-index: -1
+.info
+	width: 21.8px
+	height: 21.8px
+	display: inline-block
+
+.white_popup
+	.mfp-close
+		margin-top: 20px
+		right: 12.2%
+		width: 23.5px
+		height: 23.5px
+		font-size: 47px
+	&.mfp-bg
+		background: #fff
+.white
+	&:focus
+		color: #89a53c
+
+.owl-nav
+	position: absolute
+	width: 100%
+	top: 50%
+	.owl-prev
+		float: left
+		width: 35px
+		height: 70.4px
+		margin-left: -50px
+	.owl-next
+		float: right
+		width: 35px
+		height: 70.4px
+		margin-right: -50px
+.owl-dots
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	margin-top: 20px
+	height: 247px
+	align-items: stretch
+	.owl-dot
+		width: 100%
+		background-size: cover
+		background-position: center center
+/* Бэкграунды пагинации */
+#photo_kreml
+	.owl-dot
+		&:nth-child(1)
+			background-image: url(../img/kreml.jpg)
+		&:nth-child(2)
+			background-image: url(../img/kreml.jpg)
+			margin: 0 20px
+		&:nth-child(3)
+			background-image: url(../img/kreml.jpg)
+
+#photo_usil
+	.owl-dot
+		&:nth-child(1)
+			background-image: url(../img/usil.jpg)
+		&:nth-child(2)
+			background-image: url(../img/usil.jpg)
+			margin: 0 20px
+		&:nth-child(3)
+			background-image: url(../img/usil.jpg)
+
+
+.slider
+	width: 90%
+	margin: 0 auto
+
+a 
+	&:focus
+		outline: none
+		text-decoration: none
+		color: 
+@import "media" // Всегда в конце

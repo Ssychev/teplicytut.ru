@@ -1,0 +1,7 @@
+User-Agent: *
+Allow: /
+Disallow: /cgi-bin
+Host:  https://teplicytut.ru/
+
+User-Agent: Yandex
+Sitemap:  https://teplicytut.ru/sitemap.xml
